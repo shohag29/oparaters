@@ -1,0 +1,101 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, rgb(58, 0, 205), rgb(255, 0, 174));
+    color: white;
+}
+
+.heading {
+    text-align: center;
+    padding: 30px;
+}
+
+.contanar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 30px;
+}
+
+.card {
+    height: 280px;
+    width: 350px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    font-size: large;
+    border-radius: 10px;
+    background-color: white;
+    color: rgb(246, 2, 209);
+}
+
+.card:hover {
+    height: 280px;
+    width: 350px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    font-size: large;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, rgb(58, 0, 205), rgb(255, 0, 174));
+    color: rgb(255, 255, 255);
+}
+
+.cardHead {
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 8px;
+    border-bottom: 2px solid rgb(246, 2, 209);
+}
+
+.listGroup {
+    padding-left: 40px;
+    ;
+}
+
+
+@media (max-width:912px) {
+    body {
+        height: fit-content;
+        background-image: linear-gradient(to top, rgb(58, 0, 205), rgb(255, 0, 174));
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+    }
+
+    .heading {
+        text-align: center;
+        padding: 30px;
+        color: black;
+    }
+
+    .contanar {
+        display: block;
+        margin-left: 16px;
+    }
+
+    .card {
+        height: 290px;
+        width: 95%;
+        box-shadow: 0px 0px 10px rgb(0, 0, 0);
+        font-size: large;
+        border-radius: 10px;
+        background-color: white;
+        color: rgb(246, 2, 209);
+        margin-bottom: 30px;
+    }
+
+    .card:hover {
+        height: 290px;
+        width: 95%;
+        box-shadow: 0px 0px 10px rgb(0, 0, 0);
+        font-size: large;
+        border-radius: 10px;
+        background-image: linear-gradient(to bottom, rgb(58, 0, 205), rgb(255, 0, 174));
+        color: rgb(255, 255, 255);
+    }
+}
